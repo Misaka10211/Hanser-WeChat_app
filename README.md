@@ -13,7 +13,7 @@
 3.代码的耦合度较高
 
 小程序界面如下：
-![首页](https://img-blog.csdn.net/20180325093435514?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NheVdoYXRfc2F5SGVsbG8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![首页](https://github.com/Misaka10211/Hanser-WeChat_app/blob/main/wiki/demo-home_page.png)
 
 ![答题页](https://img-blog.csdn.net/20180325093524206?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NheVdoYXRfc2F5SGVsbG8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
