@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<view style="display: flex; align-items: center; justify-content: center;">
+  <label>欢迎毛怪</label>
+</view>
+<view style="display: flex; align-items: center; justify-content: center;">
+  <label>开 始</label>
+</view>
+<view style="display: flex; align-items: center; justify-content: center;">
+  <label>↓</label>
+</view>
+
+<button style="position: flex; align-items: center; justify-content: center; width:150px; height:126px; border:none " bindtap='beginAnswer' plain='true'> 
+  <image class="tapimg1" src="../../imgs/icon_test1.png" ></image>
+</button>
+
+
+<view style="position: fixed; bottom:260px; left:5%">已选中：{{count_tag}}个 tag，{{will_show}}</view>
+
+<view wx:if="{{choose_hanser==0}}" style="position: fixed; bottom:220px; left:5%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_hanser'> 关于憨色 </button>
+</view>
+<view wx:if="{{choose_hanser==1}}" style="position: fixed; bottom:220px; left:5%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_hanser' plain="true"> 关于憨色 </button>
+</view>
+<view wx:if="{{choose_publish==0}}" style="position: fixed; bottom:220px; left:36%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_publish'> 投稿相关 </button>
+</view>
+<view wx:if="{{choose_publish==1}}" style="position: fixed; bottom:220px; left:36%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_publish' plain="true"> 投稿相关 </button>
+</view>
+<view wx:if="{{choose_stream==0}}" style="position: fixed; bottom:220px; left:67%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_stream'> 直播相关 </button>
+</view>
+<view wx:if="{{choose_stream==1}}" style="position: fixed; bottom:220px; left:67%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_stream' plain="true"> 直播相关 </button>
+</view>
+
+<view wx:if="{{choose_workshop==0}}" style="position: fixed; bottom:180px; left:5%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_workshop'> 二创相关 </button>
+</view>
+<view wx:if="{{choose_workshop==1}}" style="position: fixed; bottom:180px; left:5%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_workshop' plain="true"> 二创相关 </button>
+</view>
+<view wx:if="{{choose_line==0}}" style="position: fixed; bottom:180px; left:36%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_line'> 联动相关 </button>
+</view>
+<view wx:if="{{choose_line==1}}" style="position: fixed; bottom:180px; left:36%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_line' plain="true"> 联动相关 </button>
+</view>
+<view wx:if="{{choose_show==0}}" style="position: fixed; bottom:180px; left:67%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_show'> 线下相关 </button>
+</view>
+<view wx:if="{{choose_show==1}}" style="position: fixed; bottom:180px; left:67%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_show' plain="true"> 线下相关 </button>
+</view>
+
+
+<view wx:if="{{choose_dub==0}}" style="position: fixed; bottom:140px; left:5%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_dub'> 配音相关 </button>
+</view>
+<view wx:if="{{choose_dub==1}}" style="position: fixed; bottom:140px; left:5%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_dub' plain="true"> 配音相关 </button>
+</view>
+<view wx:if="{{choose_game==0}}" style="position: fixed; bottom:140px; left:36%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_game'> 游戏相关 </button>
+</view>
+<view wx:if="{{choose_game==1}}" style="position: fixed; bottom:140px; left:36%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_game' plain="true"> 游戏相关 </button>
+</view>
+<view wx:if="{{choose_friend==0}}" style="position: fixed; bottom:140px; left:67%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_friend'> 憨的朋友 </button>
+</view>
+<view wx:if="{{choose_friend==1}}" style="position: fixed; bottom:140px; left:67%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_friend' plain="true"> 憨的朋友 </button>
+</view>
+
+<view wx:if="{{choose_saying==0}}" style="position: fixed; bottom:100px; left:5%; width:33%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_saying'> 对上下联 </button>
+</view>
+<view wx:if="{{choose_saying==1}}" style="position: fixed; bottom:100px; left:5%; width:33%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_saying' plain="true"> 对上下联 </button>
+</view>
+<view wx:if="{{choose_all==0}}" style="position: fixed; bottom:100px; left:36%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap='tag_all'> 全选 </button>
+</view>
+<view wx:if="{{choose_all==1}}" style="position: fixed; bottom:100px; left:36%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap='tag_all' plain="true"> 全选 </button>
+</view>
+
+
+<view style="position: fixed; bottom:50px; left:2%"> 难度选择：{{difficulty_choice}}</view>
+<view style="position: fixed;bottom:5px; left:2%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap="diffuculty_Simple" plain="true">简单</button>
+</view>
+<view style="position: fixed;bottom:5px;  left:24%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap="diffuculty_Normal">正常</button>
+</view>
+<view style="position: fixed;bottom:5px; left:46%; width:30%">
+  <button class="mini-btn" type="warn" size="mini" bindtap="diffuculty_Hard" plain="true">困难</button>
+</view>
+<view style="position: fixed;bottom:5px;  left:71%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap="diffuculty_ignore">忽略难度</button>
+</view>

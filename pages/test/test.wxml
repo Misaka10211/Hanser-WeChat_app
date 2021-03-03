@@ -1,0 +1,47 @@
+<view class="page">
+  <view class='page__hd'>
+    <view class="page__title" >{{index+1}}、{{questionDetail}}</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+            <view wx:if="{{opt_count>=1}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='answerClickA'>
+                <view class="weui-cell__bd">{{optionA}}、{{answerA}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <view wx:if="{{opt_count>=2}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='answerClickB'>
+                <view class="weui-cell__bd">{{optionB}}、{{answerB}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <view wx:if="{{opt_count>=3}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='answerClickC'>
+                <view class="weui-cell__bd">{{optionC}}、{{answerC}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <view wx:if="{{opt_count>=4}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='answerClickD'>
+                <view class="weui-cell__bd">{{optionD}}、{{answerD}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            
+        </view>
+        <view wx:if="{{opt_count>=1 && showresults!='default - result'}}">答题情况：</view>
+        <view wx:if="{{opt_count>=1 && showresults!='default - result'}}">{{showresults}}</view>
+        <view wx:if="{{showanswer != 'default -answer'}}" class="hight-light-text">参考答案：</view>
+        <view wx:if="{{showanswer != 'default -answer'}}">{{showanswer}}</view>
+        <view wx:if="{{showanswer != 'default -answer'}}">解析：</view>
+        <view wx:if="{{showanswer != 'default -answer'}}">{{analysis}}</view>
+  </view>
+
+  <view style="position: fixed;bottom:5px; left:2%; width:30%">
+    <button bindtap="previous_question" >上一题</button>
+  </view>
+  <view style="position: fixed;bottom:5px;  left:35%; width:30%">
+    <button bindtap="show_analysis" type="primary" plain="true">看解析</button>
+  </view>
+  <view style="position: fixed;bottom:5px; left:68%; width:30%">
+    <button bindtap="next_question" >下一题</button>
+  </view>
+  
+    
+</view>
+
+<view>已选中：{{to_show}}</view>
+<view>opt count: {{opt_count}}</view>

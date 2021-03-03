@@ -1,0 +1,16 @@
+/**index.wxss**/
+
+.begininfo {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tapimg1{  
+  width: 255rpx;
+  height: 255rpx;
+}
