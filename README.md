@@ -52,7 +52,7 @@ tag选择示例如下：
   
 ![选择tag](https://github.com/Misaka10211/Hanser-WeChat_app/blob/main/wiki/demo-home_page-tag.png)  
 
-tag选择示例如下：  
+难度选择示例如下：  
   
 ![选择难度](https://github.com/Misaka10211/Hanser-WeChat_app/blob/main/wiki/demo-home-page-difficulty.png)  
   
