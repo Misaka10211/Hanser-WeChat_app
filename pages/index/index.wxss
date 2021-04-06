@@ -14,3 +14,22 @@
   width: 255rpx;
   height: 255rpx;
 }
+
+
+.simple-btn {
+  background-color: #66df15;
+  border-color: #66df15;
+  color: #FFF;
+}
+
+.normal-btn {
+  background-color: #ffac30;
+  border-color: #ffac30;
+  color: #FFF;
+}
+
+.hard-btn {
+  background-color: #fa4b4b;
+  border-color: #fa4b4b;
+  color: #FFF;
+}

@@ -244,19 +244,40 @@ Page({
 
 
   diffuculty_Simple: function() {
-    this.setData({
-      difficulty_choice: '简单'
-    })
+    if(this.data.difficulty_choice=='简单'){
+      this.setData({
+        difficulty_choice: '忽略难度'
+      })
+    }
+    else{
+      this.setData({
+        difficulty_choice: '简单'
+      })
+    }
   },
   diffuculty_Normal: function() {
-    this.setData({
-      difficulty_choice: '正常'
-    })
+    if(this.data.difficulty_choice=='正常'){
+      this.setData({
+        difficulty_choice: '忽略难度'
+      })
+    }
+    else{
+      this.setData({
+        difficulty_choice: '正常'
+      })
+    }
   },
   diffuculty_Hard: function() {
-    this.setData({
-      difficulty_choice: '困难'
-    })
+    if(this.data.difficulty_choice=='困难'){
+      this.setData({
+        difficulty_choice: '忽略难度'
+      })
+    }
+    else{
+      this.setData({
+        difficulty_choice: '困难'
+      })
+    }
   },
   diffuculty_ignore: function() {
     this.setData({

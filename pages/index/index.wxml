@@ -89,15 +89,36 @@
 
 
 <view style="position: fixed; bottom:50px; left:2%"> 难度选择：{{difficulty_choice}}</view>
-<view style="position: fixed;bottom:5px; left:2%; width:30%">
-  <button class="mini-btn" type="primary" size="mini" bindtap="diffuculty_Simple" plain="true">简单</button>
+
+
+
+
+
+
+<view wx:if="{{difficulty_choice!='简单'}}" style="position: fixed;bottom:5px; left:2%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap="diffuculty_Simple"> 简单 </button>
 </view>
-<view style="position: fixed;bottom:5px;  left:24%; width:30%">
+<view wx:if="{{difficulty_choice=='简单'}}" style="position: fixed;bottom:5px; left:2%; width:30%">
+  <button class="simple-btn" size="mini" bindtap="diffuculty_Simple">简单</button>
+</view>
+
+<view wx:if="{{difficulty_choice!='正常'}}" style="position: fixed;bottom:5px;  left:24%; width:30%;">
   <button class="mini-btn" type="default" size="mini" bindtap="diffuculty_Normal">正常</button>
 </view>
-<view style="position: fixed;bottom:5px; left:46%; width:30%">
-  <button class="mini-btn" type="warn" size="mini" bindtap="diffuculty_Hard" plain="true">困难</button>
+<view wx:if="{{difficulty_choice=='正常'}}" style="position: fixed;bottom:5px;  left:24%; width:30%;">
+  <button class="normal-btn" size="mini" bindtap="diffuculty_Normal" >正常</button>
 </view>
-<view style="position: fixed;bottom:5px;  left:71%; width:30%">
+
+<view wx:if="{{difficulty_choice!='困难'}}" style="position: fixed;bottom:5px; left:46%; width:30%">
+  <button class="mini-btn" type="default" size="mini" bindtap="diffuculty_Hard">困难</button>
+</view>
+<view wx:if="{{difficulty_choice=='困难'}}" style="position: fixed;bottom:5px; left:46%; width:30%">
+  <button class="hard-btn" size="mini" bindtap="diffuculty_Hard">困难</button>
+</view>
+
+<view wx:if="{{difficulty_choice!='忽略难度'}}" style="position: fixed;bottom:5px;  left:71%; width:30%">
   <button class="mini-btn" type="default" size="mini" bindtap="diffuculty_ignore">忽略难度</button>
+</view>
+<view wx:if="{{difficulty_choice=='忽略难度'}}" style="position: fixed;bottom:5px;  left:71%; width:30%">
+  <button class="mini-btn" type="primary" size="mini" bindtap="diffuculty_ignore" plain="true">忽略难度</button>
 </view>
