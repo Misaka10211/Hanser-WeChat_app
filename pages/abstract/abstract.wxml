@@ -1,0 +1,110 @@
+<!--pages/abstract/abstract.wxml-->
+<scroll-view scroll-x style="height: 1750rpx;" >
+  <view>==========题目预览页 {{cur_page}}/{{max_page}}==========</view>
+  <view>cur show:{{cur_show}}</view>
+  <view wx:if="{{show_count>=1}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs1'>
+    <view class="weui-cell__bd">{{abs1}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==1}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=2}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs2'>
+    <view class="weui-cell__bd">{{abs2}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==2}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=3}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs3'>
+    <view class="weui-cell__bd">{{abs3}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==3}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=4}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs4'>
+    <view class="weui-cell__bd">{{abs4}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==4}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=5}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs5'>
+    <view class="weui-cell__bd">{{abs5}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==5}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=6}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs6'>
+    <view class="weui-cell__bd">{{abs6}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==6}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=7}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs7'>
+    <view class="weui-cell__bd">{{abs7}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==7}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=8}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs8'>
+    <view class="weui-cell__bd">{{abs8}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==8}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=9}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs9'>
+    <view class="weui-cell__bd">{{abs9}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==9}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=10}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs10'>
+    <view class="weui-cell__bd">{{abs10}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==10}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=11}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs11'>
+    <view class="weui-cell__bd">{{abs11}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==11}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=12}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs12'>
+    <view class="weui-cell__bd">{{abs12}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==12}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=13}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs13'>
+    <view class="weui-cell__bd">{{abs13}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==13}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=14}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs14'>
+    <view class="weui-cell__bd">{{abs14}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==14}}">{{answer}}</view>
+
+  <view wx:if="{{show_count>=15}}" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='abs15'>
+    <view class="weui-cell__bd">{{abs15}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view wx:if="{{show_answer==15}}">{{answer}}</view>
+
+  <view wx:if="{{cur_page>1 && cur_page<max_page}}" style="position: absolute; bottom:3%; left:10%; width:30%">
+    <button bindtap="previous_page" >上一页</button>
+  </view>
+  <view wx:if="{{cur_page==1}}" style="position: absolute; bottom:3%; left:35%; width:30%">
+    <button bindtap="next_page" >下一页</button>
+  </view>
+  <view wx:if="{{cur_page==max_page}}" style="position: absolute; bottom:3%; left:35%; width:30%">
+    <button bindtap="previous_page" >上一页</button>
+  </view>
+
+  <view wx:if="{{cur_page>1 && cur_page<max_page}}" style="position: absolute; bottom:3%; left:60%; width:30%">
+    <button bindtap="next_page" >下一页</button>
+  </view>
+
+ 
+</scroll-view>

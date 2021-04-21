@@ -88,6 +88,11 @@
 </view>
 
 
+<view style="position: fixed; bottom:100px; left:67%; width:30%">
+  <button class="mini-btn" type="warn" size="mini" bindtap='abstract_test' > 摘要测试 </button>
+</view>
+
+
 <view style="position: fixed; bottom:50px; left:2%"> 难度选择：{{difficulty_choice}}</view>
 
 

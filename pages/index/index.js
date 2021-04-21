@@ -285,6 +285,281 @@ Page({
     })
   },
   
+  abstract_test: function() {
+    if(this.data.count_tag!=0){//tag 过滤
+      var TagSearch =　[] //暂存为数组，以便处理
+      //获取数组长度：array.length
+      if(this.data.choose_hanser == 1){
+        var hanser = app.globalData.tag_search_hanser
+        for(var i=0; i<hanser.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == hanser[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != hanser[i]){
+            TagSearch.push(hanser[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_publish == 1){
+        var publish = app.globalData.tag_search_publish
+        for(var i=0; i<publish.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == publish[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != publish[i]){
+            TagSearch.push(publish[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_stream == 1){
+        var stream = app.globalData.tag_search_stream
+        for(var i=0; i<stream.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == stream[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != stream[i]){
+            TagSearch.push(stream[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_workshop == 1){
+        var workshop = app.globalData.tag_search_workshop
+        for(var i=0; i<workshop.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == workshop[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != workshop[i]){
+            TagSearch.push(workshop[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_line == 1){
+        var line = app.globalData.tag_search_line
+        for(var i=0; i<line.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == line[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != line[i]){
+            TagSearch.push(line[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_show == 1){
+        var show = app.globalData.tag_search_show
+        for(var i=0; i<show.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == show[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != show[i]){
+            TagSearch.push(show[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_dub == 1){
+        var dub = app.globalData.tag_search_dub
+        for(var i=0; i<dub.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == dub[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != dub[i]){
+            TagSearch.push(dub[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_game == 1){
+        var game = app.globalData.tag_search_game
+        for(var i=0; i<game.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == game[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != game[i]){
+            TagSearch.push(game[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_friend == 1){
+        var friend = app.globalData.tag_search_friend
+        for(var i=0; i<friend.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == friend[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != friend[i]){
+            TagSearch.push(friend[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+      if(this.data.choose_saying == 1){
+        var saying = app.globalData.tag_search_saying
+        for(var i=0; i<saying.length; i+=1){
+          var j=0
+          while(j<TagSearch.length){
+            if(TagSearch[j] == saying[i]){
+              break //found id in TagSearch, no need to add
+            }
+            j+=1
+          }
+          if(TagSearch[j] != saying[i]){
+            TagSearch.push(saying[i]) //add new id to TagSearch
+            TagSearch.sort((a, b) => a - b)
+          }
+        }
+        this.setData({
+          will_show: TagSearch,
+        })
+      }
+
+      app.globalData.ToShow = TagSearch
+    }
+    else{
+      this.setData({
+        will_show: app.globalData.default
+      })
+      app.globalData.ToShow = app.globalData.default
+    }
+
+    if(this.data.difficulty_choice != '忽略难度'){ //难度过滤
+      if(this.data.difficulty_choice== '简单'){
+        var DifficultySearch = []
+        var difficultyFilter = app.globalData.difficulty_S
+        var TagSearch = this.data.will_show
+        for(var i=0; i<TagSearch.length; i+=1){
+          var j = 0
+          while(j<difficultyFilter.length){
+            if(TagSearch[i] == difficultyFilter[j]){
+              DifficultySearch.push(TagSearch[i])
+              DifficultySearch.sort((a, b) => a - b)
+            }
+            j+=1
+          }
+        }
+        this.setData({
+          will_show: DifficultySearch
+        })
+        app.globalData.difficulty_choice = 'S'
+      }
+      if(this.data.difficulty_choice== '正常'){
+        var DifficultySearch = []
+        var difficultyFilter = app.globalData.difficulty_N
+        var TagSearch = this.data.will_show
+        for(var i=0; i<TagSearch.length; i+=1){
+          var j = 0
+          while(j<difficultyFilter.length){
+            if(TagSearch[i] == difficultyFilter[j]){
+              DifficultySearch.push(TagSearch[i])
+              DifficultySearch.sort((a, b) => a - b)
+            }
+            j+=1
+          }
+        }
+        this.setData({
+          will_show: DifficultySearch
+        })
+        app.globalData.difficulty_choice = 'N'
+      }
+      if(this.data.difficulty_choice== '困难'){
+        var DifficultySearch = []
+        var difficultyFilter = app.globalData.difficulty_H
+        var TagSearch = this.data.will_show
+        for(var i=0; i<TagSearch.length; i+=1){
+          var j = 0
+          while(j<difficultyFilter.length){
+            if(TagSearch[i] == difficultyFilter[j]){
+              DifficultySearch.push(TagSearch[i])
+              DifficultySearch.sort((a, b) => a - b)
+            }
+            j+=1
+          }
+        }
+        this.setData({
+          will_show: DifficultySearch
+        })
+        app.globalData.difficulty_choice = 'H'
+      }
+
+      app.globalData.ToShow = DifficultySearch
+    }
+    else{
+      app.globalData.difficulty_choice = 'NONE'
+    }
+
+    
+    wx.navigateTo({
+      url: '../abstract/abstract'
+    })
+  },
+ 
 
   //事件处理函数
   beginAnswer: function() {
